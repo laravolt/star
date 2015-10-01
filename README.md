@@ -11,9 +11,35 @@ Via composer
 $ composer require laravolt/star
 ```
 
-Add Service Provider
+Tambahkan ini Service Provider
 ``` php
 Laravolt\Star\ServiceProvider::class,
+```
+
+Tambahkan ini ke Service Provider Alias
+``` php
+'Star'      => Laravolt\Star\Facade::class
+```
+
+Jalankan ini untuk mendapatkan file migration 
+``` bash
+php artisan vendor:publish 
+php artisan migrate
+```
+
+Gunakan trait `StarrableTrait` pada model yang akan diberikan bintang.
+
+## Usage
+
+Terdapat 3 method yang dapat digunakan
+``` php
+// $obj adalah object model yang akan diberikan bintang. Pastikan model tersebut sudah ditambahkan StarrableTrait.
+
+Star::star($obj, $starValue);
+
+Star::average($obj);
+
+Star::giver($obj);
 ```
 
 ## Contributing
