@@ -1,0 +1,44 @@
+{
+    "name": "Laravolt/Star",
+    "description": ":package_description",
+    "keywords": [
+        "Laravolt",
+        "Star"
+    ],
+    "homepage": "https://github.com/Laravolt/Star",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":author_name",
+            "email": ":author_email",
+            "homepage": ":author_website",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.0",
+        "illuminate/support": "~5.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laravolt\\Star\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laravolt\\Star\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
