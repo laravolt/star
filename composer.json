@@ -5,13 +5,13 @@
         "laravolt",
         "star"
     ],
-    "homepage": "https://github.com/Laravolt/Star",
+    "homepage": "https://github.com/laravolt/star",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "tama",
+            "email": "am.adhatama@gmail.com",
+            "homepage": "http://adhatama.com",
             "role": "Developer"
         }
     ],
