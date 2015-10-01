@@ -1,9 +1,9 @@
 {
-    "name": "Laravolt/Star",
+    "name": "laravolt/star",
     "description": ":package_description",
     "keywords": [
-        "Laravolt",
-        "Star"
+        "laravolt",
+        "star"
     ],
     "homepage": "https://github.com/Laravolt/Star",
     "license": "MIT",
