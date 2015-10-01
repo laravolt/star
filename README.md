@@ -11,6 +11,11 @@ Via composer
 $ composer require laravolt/star
 ```
 
+Add Service Provider
+``` php
+Laravolt\Star\ServiceProvider::class,
+```
+
 ## Contributing
 
 Silakan melakukan pull request.
