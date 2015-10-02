@@ -148,13 +148,11 @@ class ServiceProvider extends BaseServiceProvider
     {
         $this->app['router']->group([
             'namespace' => __NAMESPACE__
-        ], function() {
-            // index action showing the packages
-            $this->app['router']->any('/Star', [
-                'as'   => 'Star:index',
-                'uses' => 'Controllers\StarController@index'
+        ], function($router) {
+            $router->get('/laravolt-star-add', [
+                'as' => 'laravolt.star.add',
+                'uses' => 'Http\Controllers\StarController@add'
             ]);
-
         });
     }
 

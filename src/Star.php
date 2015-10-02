@@ -38,4 +38,9 @@ class Star {
     {
         return $obj->stars()->get();
     }
+
+    public function render($obj, $starValue)
+    {
+        return view('Star::star', ['obj' => $obj, 'starValue' => $starValue])->render();
+    }
 }
