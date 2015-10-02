@@ -7,4 +7,9 @@ trait StarrableTrait
     {
         return $this->morphMany(\Laravolt\Star\Models\Star::class, 'starrable');
     }
+
+    public function average()
+    {
+        $this->stars();
+    }
 }

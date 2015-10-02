@@ -36,15 +36,6 @@ class Star {
 
     public function giver($obj)
     {
-        $stars = $obj->stars()->get();
-
-        $giver = [];
-        foreach($stars as $star) {
-            $myStar = $star->first();
-            $myStar->starrable()->first();
-            array_push($giver, $star->first());
-        }
-
-        return $giver;
+        return $obj->stars()->get();
     }
 }
